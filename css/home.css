@@ -360,10 +360,14 @@ hr {
 .article_title {
   font-size: 45px;
 }
+.article_des{
+  text-align: justify;
+}
 .article_des a {
-  color: var(--secondary);
+  color: var(--yellow);
   text-decoration: underline;
 }
+
 .article_des a:hover {
   color: var(--yellow);
 }
