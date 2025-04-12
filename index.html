@@ -214,18 +214,19 @@
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ac sagittis ante, eu accumsan
                             nunc. Nunc velit neque, molestie eu suscipit mollis, ultrices vehicula metus.</p>
 
-                        <div class="bnt_area">
-                            <button class="poli" data-target="umum">Poli UMUM</button>
-                            <button class="poli" data-target="gigi">Poli GIGI</button>
+                        <div class="category_div">
+                            <button class="category_btn active">Dokter Umum</button>
+                            <button class="category_btn">Dokter Gigi</button>
+
                         </div>
                     </div>
 
                     <!-- Poli UMUM  -->
 
-                    <div class="doctor_area">
+                    <div class="category_data" id="category-1">
 
                         <div class="doctor_left">
-                            <ul class="doctor_slider" id="umum">
+                            <ul>
                                 <li>
                                     <img src="images/Doctor.svg" alt="Doctor Icon">
                                     <h4 class="doctor_name">Dr. Desro Luhonna</h4>
@@ -264,8 +265,11 @@
                             </ul>
                         </div>
 
-                        <div class="doctor_right">
-                            <ul class="doctor_slider" id="gigi">
+                    </div>
+
+                    <div class="category_data" id="category-2" style="display: none">
+                        <div class="doctor_left">
+                            <ul>
                                 <li>
                                     <img src="images/Doctor.svg" alt="Doctor Icon">
                                     <h4 class="doctor_name">Drg. Kamil</h4>
@@ -289,7 +293,6 @@
                                 </li>
                             </ul>
                         </div>
-
                     </div>
 
 
@@ -297,12 +300,10 @@
             </div>
         </section>
 
-        
-
 
         <!-- our Gallery -->
 
-        <section class="gallery_section white_bg">
+        <section class="gallery_section white_bg" id="gallery">
             <div class="container">
                 <div class="gallery_container padding flex">
                     <div class="gallery_left wow fadeInLeft" style="visibility: visible; animation-name: fadeInLeft;">
@@ -405,7 +406,7 @@
                     <ul>
                         <li><a href="/">Home</a></li>
                         <li><a href="#service">Services</a></li>
-                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">About</a></li>
                         <li><a href="#doctor">Doctors</a></li>
                     </ul>
                 </div>

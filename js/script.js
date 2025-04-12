@@ -33,33 +33,6 @@ hamburger.onclick = function(){
 
 
 
-  //******** Doctors ********/ 
-
-//   document.addEventListener("DOMContentLoaded", function () {
-//     const buttons = document.querySelectorAll(".poli");
-//     const menus = document.querySelectorAll(".doctor_slider");
-
-//     buttons.forEach(button => {
-//         button.addEventListener("click", function () {
-//             const target = this.getAttribute("data-target");
-
-//             // Hide all Doctors
-//             menus.forEach(menu => menu.classList.remove("active"));
-
-//             // Deactivate all buttons
-//             buttons.forEach(btn => btn.classList.remove("active"));
-
-//             // Show the selected doctor and mark button as active
-//             document.getElementById(target).classList.add("active");
-//             this.classList.add("active");
-//         });
-//     });
-
-//     // Show first menu by default
-//     buttons[0].click();
-// });
-
-
 
   //******** Gallery ********/ 
 
@@ -88,3 +61,20 @@ hamburger.onclick = function(){
     },
   });
 
+
+ //******** Doctor ********/ 
+
+  const buttons = document.querySelectorAll(".category_btn");
+const categoryData = document.querySelectorAll(".category_data");
+
+buttons.forEach((button, index) => {
+  button.addEventListener("click", () => {
+    buttons.forEach((btn) => btn.classList.remove("active"));
+
+    button.classList.add("active");
+
+    categoryData.forEach((div) => (div.style.display = "none"));
+
+    categoryData[index].style.display = "block";
+  });
+});

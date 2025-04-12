@@ -199,6 +199,22 @@
     font-size: 40px;
     line-height: 3rem;
   }
+  .footer_container,
+  .footer_area {
+    flex-direction: column;
+  }
+  .footer_area {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .footer_des {
+    margin-top: 20px;
+  }
+  .footer_menu {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 /* ********************** */
@@ -271,9 +287,6 @@
   }
   .gallery_container {
     flex-direction: column;
-  }
-  .gallery_left {
-    /* width: 100%; */
   }
   .gallery_title {
     font-size: 40px;
